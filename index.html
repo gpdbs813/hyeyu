@@ -58,7 +58,32 @@
 <ul>
     <style>
         #menubar {
- 표</a>
+            background : #FFE2E2;
+        }
+        #menubar ul { /* 여백과 패딩 모두 0 */
+            margin : 0;
+            padding : 0;
+            width : 200px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+        }
+        #menubar ul li {
+            display : block; /* 새 줄로 넘어가지 않게 */
+            list-style-type : none; /* 마커 삭제 */
+            padding : 0px 15px; /* top=bottom=0, left=right=15px */ 
+        }
+        #menubar ul li a {
+            color : #000000;
+              text-decoration : none; /* 링크 보이지 않게 */
+        }
+        #menubar ul li a:hover {
+             color : #f0b6f0;  /* 마우스 올라 갈 때 색 */
+        }
+        </style>
+        </head>
+        <body>
+        <header id="menubar">
+            <ul>
+                <li><a href="self_intro.html" target="_blank">자기소개</a>
+                <li><a href="time.h" target="_blank">시간표</a>
                 <li><a href="#">취미관련</a>
             </ul>
         </ul>
@@ -103,32 +128,6 @@
 <li>여름에는 바다로
 <li>겨울에는 산으로
 </ul>
-<table>
-    <style>
-        table{border-collapse : collapse;}
-        td, th{
-            text-align: center;
-            padding: 10px;
-            height: 15px;
-            width: 100px;}
-        thead,tfoot{
-            background:blue;
-            color: whitesmoke;}
-        th{height: 40px; width:400px;}
-        tbody tr:nth-child(even){background:#c0e1f5;}
-        tbody tr:hover{background: #ffdfe4;}
-     </style>
-<caption><b>[2024학년도 2학기 시간표]</b></caption>
-<thead>
-<tr><th>과목</th><th>시작시간</th><th>종료시간</th>
-</thead>
-<tbody>
-<tr><td>데이터사이언스기초</td><td>9:00</td><td>9:50</td>
-<tr><td>AI를 위한 기초수학</td><td>10:00</td><td>10:50</td>
-<tr><td>C프로그래밍</td><td>13:00</td><td>14:50</td>
-<tr><td>웹프로그래밍</td><td>15:00</td><td>15:50</td>
-</tbody>
-</table>
 <hr>
 <img src="https://www.hansung.ac.kr/sites/hansung/images/common/NEW_Logo_2.png"
 alt="사진의 주소가 변경되었습니다.">
