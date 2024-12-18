@@ -65,7 +65,15 @@
         <div class="form-group">
             취미 : <input type="text" name="hobby" size="30" placeholder="취미를 입력하세요">
         </div>
-
+        
+        <div class="form-group">
+            마케팅 수신 여부 :
+            <input type="text" list="marketing-options" name="marketing-consent" placeholder="마케팅 수신 여부를 선택해주세요">
+            <datalist id="marketing-options">
+                <option value="동의"></option>
+                <option value="비동의"></option>
+            </datalist>
+        </div>
  
         <div class="form-group">
             사는 지역과 근무지역(중복선택 가능):
@@ -98,3 +106,4 @@
     </script>
 </body>
 </html>
+
