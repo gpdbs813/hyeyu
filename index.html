@@ -68,7 +68,6 @@
     }
     h3 {color: hwb(0 5% 95%); text-align: center;} /* 텍스트를 가운데 정렬 */
     h3 li:hover { background : #ffdfe4;}
-    h4 ul{list-style-type:"✅"; margin-left: 10px}
     hr {border: 2px solid lightgray; text-align: center;}
     span {color:#346fbd; font-size:20px;}
     strong { text-decoration : overline;}
@@ -89,11 +88,16 @@
         color: #333;
     }
 </style>
+<script>
+window.onload = function() {
+    alert('이벤트 1 : 메인화면\n이벤트 2 : 자기소개\n이벤트 3 : 시간표\n이벤트 4 : 취미');
+}
+</script>
 </head>
 
 <body>
 <header>
-    <b>😊<a href="javascript:alert('안녕하세요👋')">안녕하세요 비즈니스컨설팅학과 강혜윤입니다😊</a></b>
+    <b>😊안녕하세요 비즈니스컨설팅학과 강혜윤입니다😊</b>
 </header>
 
 <nav>
@@ -109,12 +113,11 @@
 <section>
     <h3>
         <ul>
-            ◀좌측의 목록을 확인해주세요. 저에대한 정보를 확인하실 수 있습니다▶</li> 
-            <br>
-            <br>
+            ◀좌측의 목록을 확인해주세요. 저에대한 정보를 확인하실 수 있습니다▶
+            <br><br>
             <b>🥣 🥣 🥣내가 가장 좋아하는 음식들🥣 🥣 🥣</b>
         </h3>
-        <h4></h4>
+        <h4>
             <li><b>떡볶이</b>
                 <br>
                 <img src="./img/tt.jpg" alt="사진의 주소가 변경되었습니다." width="200" height="150">
@@ -130,8 +133,9 @@
                 <img src="./img/sc.jpg" alt="사진의 주소가 변경되었습니다." width="200" height="150">
                 <br><br>
             </li>
-        </ul>
-    </h4>
+        </h4>
+    </section>
+
     <hr>
     <br>
     <hr>
