@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>자기소개</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+    #hover-area {
+        width: 300px;
+        height: 100px;
+        background-color: #ffe4e1;
+        border: 2px solid #ff7f7f;
+        margin: 0 auto;
+        line-height: 100px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #hover-area:hover {
+        background-color: #ffb6c1;
+    }
+    #info {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #555;
+        display: none;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+html, body {height: 100%;}
+header {
+      background-color: #FFC7C7;
+      height: 15%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid lightgray;
+  }
+section {
+      height: 75%; 
+      padding: 20px;
+      background-color: #F6F6F6;
+      overflow-y: auto;
+  }
+footer {
+      background-color: #8785A2;
+      height: 10%;
+      text-align: right;
+      line-height: 50px;
+      position: relative;
+      border-top: 2px solid gray;
+  }
+  .hobby-img {
+      width: 200px;
+      height: 150px;
+      margin: 20px;
+      transition: transform 0.3s ease;
+  }
+  .hobby-img:hover {
+      transform: scale(1.1);
+  }
+</style>
+<script>
+    function showInfo() {
+        document.getElementById("info").style.display = "block";
+    }
+
+    function hideInfo() {
+        document.getElementById("info").style.display = "none";
+    }
+
+    function changeImage(id, newSrc) {
+        document.getElementById(id).src = newSrc;
+    }
+
+    function restoreImage(id, originalSrc) {
+        document.getElementById(id).src = originalSrc;
+    }
+</script>
+</head>
+<header>
+    <b>😊안녕하세요 비즈니스컨설팅학과 강혜윤입니다😊</b>
+</header>
+<section>
+<body>
+    <h1>취미</h1>
+
+    <div>
+        <h3>방탈출 BEST 3</h3>
+        <img id="image1" class="hobby-img" src="image1.jpg" alt="취미 이미지 1"
+            onmouseover="changeImage('image1', 'horror.jpg')" onmouseout="restoreImage('image1', '1.png')">
+        <img id="image2" class="hobby-img" src="image2.jpg" alt="취미 이미지 2"
+            onmouseover="changeImage('image2', 'monday.jpg')" onmouseout="restoreImage('image2', '2.png')">
+        <img id="image3" class="hobby-img" src="image3.jpg" alt="취미 이미지 3"
+            onmouseover="changeImage('image3', 'market.jpg')" onmouseout="restoreImage('image3', '3.png')">
+    </div>
+</body>
+</section>
+</html>
