@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>자기소개</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+    #hover-area {
+        width: 300px;
+        height: 100px;
+        background-color: #ffe4e1;
+        border: 2px solid #ff7f7f;
+        margin: 0 auto;
+        line-height: 100px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    #hover-area:hover {
+        background-color: #ffb6c1;
+    }
+    #info {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #555;
+        display: none;
+    }
+</style>
+<script>
+    function showInfo() {
+        document.getElementById("info").style.display = "block";
+    }
+
+    function hideInfo() {
+        document.getElementById("info").style.display = "none";
+    }
+</script>
+</head>
+<body>
+    <h1>자기소개</h1>
+    <div id="hover-area" onmouseover="showInfo()" onmouseout="hideInfo()">
+        마우스를 올려주세요!
+    </div>
+    <div id="info">
+        <p><b>이름:</b> 강혜윤</p>
+        <p><b>학과:</b> 비즈니스컨설팅학과</p>
+        <p><b>학번:</b> 2304031</p>
+    </div>
+</body>
+</html>
