@@ -5,136 +5,142 @@
 <meta charset="utf-8">
 <title> 자기소개페이지 </title>
 <style>
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     html, body {height: 100%;}
     header {
-            background-color: #FFC7C7;
-            height: 15%;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-bottom: 2px solid lightgray;
-        }
+        background-color: #FFC7C7;
+        height: 15%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid lightgray;
+    }
     nav {
-            background-color: #FFE2E2;
-            width: 15%;
-            height: 75%;
-            position: absolute;
-            top: 15%;
-            padding: 20px;
-            overflow-y: auto;
-            text-align: center;
-        }
+        background-color: #FFE2E2;
+        width: 15%;
+        height: 75%;
+        position: absolute;
+        top: 15%;
+        padding: 20px;
+        overflow-y: auto;
+        text-align: center;
+    }
     section {
-            margin-left: 15%; 
-            height: 75%; 
-            padding: 20px;
-            background-color: #F6F6F6;
-            overflow-y: auto;
-        }
+        margin-left: 15%; 
+        height: 75%; 
+        padding: 20px;
+        background-color: #F6F6F6;
+        overflow-y: auto;
+    }
     footer {
-            background-color: #8785A2;
-            height: 10%;
-            text-align: right;
-            line-height: 50px;
-            position: relative;
-            border-top: 2px solid gray;
-        }
-        ul{list-style-type:"✅"; margin-left: 10px}
+        background-color: #8785A2;
+        height: 10%;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+        border-top: 2px solid gray;
+    }
+    ul {list-style-type: none; margin-left: 10px;}
+    #menubar {
+        background : #FFE2E2;
+    }
+    #menubar ul {
+        margin : 0;
+        padding : 0;
+        width : 200px;
+    }
+    #menubar ul li {
+        display : block;
+        list-style-type : none;
+        padding : 0px 15px;
+    }
+    #menubar ul li a {
+        color : #000000;
+        text-decoration : none;
+    }
+    #menubar ul li a:hover {
+        color : #f0b6f0;
+    }
+    h3 {color: hwb(0 5% 95%); text-align: center;} /* 텍스트를 가운데 정렬 */
+    h3 li:hover { background : #ffdfe4;}
+    h4 ul{list-style-type:"✅"; margin-left: 10px}
+    hr {border: 2px solid lightgray; text-align: center;}
+    span {color:#346fbd; font-size:20px;}
+    strong { text-decoration : overline;}
+    /* 회원가입 링크 스타일 추가 */
+    .signup-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff7f7f;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #ff7f7f;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .signup-link:hover {
+        background-color: #ffb6b6;
+        color: #333;
+    }
 </style>
 </head>
+
 <body>
 <header>
     <b>😊안녕하세요 비즈니스컨설팅학과 강혜윤입니다😊</b>
 </header>
+
 <nav>
-    <h3> 내가 사는 이유 </h3>
+    <h3> 🌟INDEX🌟 </h3>
     <hr>
-<ul>
-    <style>
-        #menubar {
-            background : #FFE2E2;
-        }
-        #menubar ul { /* 여백과 패딩 모두 0 */
-            margin : 0;
-            padding : 0;
-            width : 200px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
-        }
-        #menubar ul li {
-            display : block; /* 새 줄로 넘어가지 않게 */
-            list-style-type : none; /* 마커 삭제 */
-            padding : 0px 15px; /* top=bottom=0, left=right=15px */ 
-        }
-        #menubar ul li a {
-            color : #000000;
-              text-decoration : none; /* 링크 보이지 않게 */
-        }
-        #menubar ul li a:hover {
-             color : #f0b6f0;  /* 마우스 올라 갈 때 색 */
-        }
-        </style>
-        </head>
-        <body>
-        <header id="menubar">
-            <ul>
-                <li><a href="self_intro.html" target="_blank">자기소개</a>
-                <li><a href="time.h" target="_blank">시간표</a>
-                <li><a href="#">취미관련</a>
-            </ul>
-        </ul>
+    <ul>
+        <li><a href="self_intro.html" target="_blank">자기소개</a></li>
+        <li><a href="time.h" target="_blank">시간표</a></li>
+        <li><a href="#">취미</a></li>
+    </ul>
 </nav>
+
 <section>
-<h3><ul>
-<li>이름 : 강혜윤
-<li>학과 / 학번 : 비즈니스컨설팅학과 / 2304031
-<li><a href="https://futureplus.hansung.ac.kr/ko/department/consulting"target="_blank">한성대학교 : 비즈니스컨설팅학과</a></li>
-<li>주소 : 서울시 강서구
-<li>취미 : 방탈출
-  <style>
-    h3{color: hwb(0 5% 95%);}
-    h3 li:hover { background : #ffdfe4;}
-    hr{border: 2px solid lightgray; text-align: center;}
-    span {color:#346fbd,fontsize : 20px;}
-        strong { text-decoration : overline;}
-</style>
-</ul></h3>
-<hr>
-<br>
-<b>🥣🥣🥣내가 가장 좋아하는 음식들🥣🥣🥣</b>
-</ul>
-<li>떡볶이 
+    <h3>
+        <ul>
+            ◀좌측의 목록을 확인해주세요. 저에대한 정보를 확인하실 수 있습니다▶</li> 
+            <br>
+            <br>
+            <b>🥣 🥣 🥣내가 가장 좋아하는 음식들🥣 🥣 🥣</b>
+        </h3>
+        <h4></h4>
+            <li><b>떡볶이</b>
+                <br>
+                <img src="./img/tt.jpg" alt="사진의 주소가 변경되었습니다." width="200" height="150">
+                <br><br>
+            </li>
+            <li><b>곱창</b>
+                <br>
+                <img src="./img/g.jpg" alt="사진의 주소가 변경되었습니다." width="200" height="150">
+                <br><br>
+            </li>
+            <li><b>포케</b>
+                <br>
+                <img src="./img/sc.jpg" alt="사진의 주소가 변경되었습니다." width="200" height="150">
+                <br><br>
+            </li>
+        </ul>
+    </h4>
+    <hr>
     <br>
-    <img src="./img/tt.jpg"alt="사진의 주소가 변경되었습니다." width="200" height="150">
-    <br>
-<li>곱창
-    <br>
-     <img src="./img/g.jpg"alt="사진의 주소가 변경되었습니다." width="200" height="150">
-     <br>
-<li>포케
-    <br>
-    <img src="./img/sc.jpg"alt="사진의 주소가 변경되었습니다." width="200" height="150">
-    <br>
-<ol type="1">
-<li>물을 끓인다.
-<li>라면과 스프를 넣는다.
-<li>파를 썰어 넣는다.
-<li>한 입에 다 먹는다.
-</ol>
-<li>여름에는 바다로
-<li>겨울에는 산으로
-</ul>
-<hr>
-<img src="https://www.hansung.ac.kr/sites/hansung/images/common/NEW_Logo_2.png"
-alt="사진의 주소가 변경되었습니다.">
+    <hr>
+    <img src="https://www.hansung.ac.kr/sites/hansung/images/common/NEW_Logo_2.png" alt="사진의 주소가 변경되었습니다.">
 </section>
+
 <footer>
-<a href="b.html"target="_blank">회원가입</a>
+    <a href="b.html" target="_blank" class="signup-link">회원가입</a>
 </footer>
-</body></html>
-</footer>
-</body></html>
+
+</body>
+</html>
