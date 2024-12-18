@@ -30,6 +30,35 @@
         color: #555;
         display: none;
     }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+html, body {height: 100%;}
+header {
+      background-color: #FFC7C7;
+      height: 15%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid lightgray;
+  }
+section {
+      height: 75%; 
+      padding: 20px;
+      background-color: #F6F6F6;
+      overflow-y: auto;
+  }
+footer {
+      background-color: #8785A2;
+      height: 10%;
+      text-align: right;
+      line-height: 50px;
+      position: relative;
+      border-top: 2px solid gray;
+  }
 </style>
 <script>
     function showInfo() {
@@ -41,6 +70,10 @@
     }
 </script>
 </head>
+<header>
+    <b>😊안녕하세요 비즈니스컨설팅학과 강혜윤입니다😊</b>
+</header>
+<section>
 <body>
     <h1>자기소개</h1>
     <div id="hover-area" onmouseover="showInfo()" onmouseout="hideInfo()">
@@ -52,4 +85,5 @@
         <p><b>학번:</b> 2304031</p>
     </div>
 </body>
+</section>
 </html>
