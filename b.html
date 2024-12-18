@@ -1,24 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<title>회원가입</title>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="password"], input[type="date"], input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background-color: hsl(290, 73%, 85%);
+            border-radius: 5px;
+        }
+        .gender-selection input {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-<h3>회원가입</h3>
-<hr>
-<form name="fo" method="get">
-  사용자ID : <input type="text" size="15" value=""><br>
-  비밀번호 : <input type="password" size="15" value=""><br>
-  생년월일 : <input type="date"><br>
-  성별 : <input type="text" list="성별">
-  <datalist id="성별">
-    <option value="여자"></option>
-    <option value="남자"></option>
-  </datalist><br>
-  취미 : <input type="text" size="30" placeholder="취미를 입력하세요"><br>
-  <br>
-  <input type="submit" size="15" value="완료">
-</form>
+    <h3>회원가입</h3>
+    <hr>
+    <form name="fo" method="get">
+        <div class="form-group">
+            사용자ID : <input type="text" name="userID" size="15" value="">
+        </div>
+
+        <div class="form-group">
+            비밀번호 : <input type="password" name="password" size="15" value="">
+        </div>
+
+  
+        <div class="form-group">
+            생년월일 : <input type="date" name="birthdate">
+        </div>
+
+        <div class="form-group gender-selection">
+            성별 :
+            <input type="radio" name="gender" value="여자"> 여자
+            <input type="radio" name="gender" value="남자"> 남자
+        </div>
+
+    
+        <div class="form-group">
+            취미 : <input type="text" name="hobby" size="30" placeholder="취미를 입력하세요">
+        </div>
+
+ 
+        <div class="form-group">
+            사는 지역과 근무지역(중복선택 가능):
+            <input type="checkbox" name="location" value="서울"> 서울
+            <input type="checkbox" name="location" value="경기"> 경기
+            <input type="checkbox" name="location" value="인천"> 인천
+            <input type="checkbox" name="location" value="그 외"> 그 외
+        </div>
+
+        <div class="form-group">
+            피로도 :
+            <input type="range" id="fatigue-level" name="fatigue" min="0" max="100" value="0" oninput="updateFatigue()">
+            <span id="fatigue-value">0</span>%
+            <div class="progress-bar">
+                <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="완료">
+        </div>
+    </form>
+
+    <script>
+        function updateFatigue() {
+            var fatigueLevel = document.getElementById("fatigue-level").value;
+            document.getElementById("fatigue-value").textContent = fatigueLevel;
+            document.getElementById("progress-bar-fill").style.width = fatigueLevel + "%";
+        }
+    </script>
 </body>
 </html>
