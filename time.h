@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <title>시간표</title>
 <style>
-body{font-family:Arial,sans-serif;text-align:center;padding:50px}
+body{font-family:Arial,sans-serif;text-align:center;}
     #hover-area{width:300px;height:100px;background-color:#ffe4e1;border:2px solid #ff7f7f;line-height:100px;font-size:20px;color:#333;cursor:pointer;transition:background-color 0.3s ease}
     #hover-area:hover{background-color:#ffb6c1}
     #info{font-size:18px;color:#555;display:none}
     html,body{height:100%}
     header{background-color:#FFC7C7;height:15%;text-align:center;display:flex;justify-content:center;align-items:center;border-bottom:2px solid lightgray}
-    section{height:75%;padding:20px;background-color:#F6F6F6;overflow-y:auto}
+    section{height:75%;background-color:#F6F6F6;overflow-y:auto}
     footer{background-color:#8785A2;height:10%;text-align:right;line-height:50px;position:relative;border-top:2px solid gray}
 table{border-collapse:collapse;margin:auto}
 td,th{text-align:center;padding:10px;height:15px;width:100px}
